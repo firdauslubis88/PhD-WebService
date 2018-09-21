@@ -13,5 +13,48 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="openframeworks-math">
+      <UniqueIdentifier>{f665af2f-34d9-4948-8ba8-1524eca0ee0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="openframeworks-math\math">
+      <UniqueIdentifier>{d58a13d2-1dbc-43c8-b029-c5f82b567ce3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Automation\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Automation\math\ofMatrix4x4.cpp">
+      <Filter>openframeworks-math\math</Filter>
+    </ClCompile>
+    <ClCompile Include="Automation\math\ofQuaternion.cpp">
+      <Filter>openframeworks-math\math</Filter>
+    </ClCompile>
+    <ClCompile Include="Automation\math\ofVec2f.cpp">
+      <Filter>openframeworks-math\math</Filter>
+    </ClCompile>
+    <ClCompile Include="Automation\math\ofVec4f.cpp">
+      <Filter>openframeworks-math\math</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Automation\math\ofMathConstants.h">
+      <Filter>openframeworks-math\math</Filter>
+    </ClInclude>
+    <ClInclude Include="Automation\math\ofMatrix4x4.h">
+      <Filter>openframeworks-math\math</Filter>
+    </ClInclude>
+    <ClInclude Include="Automation\math\ofQuaternion.h">
+      <Filter>openframeworks-math\math</Filter>
+    </ClInclude>
+    <ClInclude Include="Automation\math\ofVec2f.h">
+      <Filter>openframeworks-math\math</Filter>
+    </ClInclude>
+    <ClInclude Include="Automation\math\ofVec3f.h">
+      <Filter>openframeworks-math\math</Filter>
+    </ClInclude>
+    <ClInclude Include="Automation\math\ofVec4f.h">
+      <Filter>openframeworks-math\math</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
