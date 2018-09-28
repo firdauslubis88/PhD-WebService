@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <OUTPUT_DIR>bin\</OUTPUT_DIR>
+    <OPENCV_DIR>$(THIRD_PARTY)\opencv-4</OPENCV_DIR>
+    <CERES_DIR>$(THIRD_PARTY)\Ceres\</CERES_DIR>
+    <CERES_EIGEN_DIR>$(THIRD_PARTY)\Ceres\third_party\Eigen3\</CERES_EIGEN_DIR>
+    <CERES_GLOG_DIR>$(THIRD_PARTY)\Ceres\third_party\glog\</CERES_GLOG_DIR>
+    <CERES_GFLAGS_DIR>$(THIRD_PARTY)\Ceres\third_party\gflags\</CERES_GFLAGS_DIR>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup />
+  <ItemGroup>
+    <BuildMacro Include="OUTPUT_DIR">
+      <Value>$(OUTPUT_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="OPENCV_DIR">
+      <Value>$(OPENCV_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="CERES_DIR">
+      <Value>$(CERES_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="CERES_EIGEN_DIR">
+      <Value>$(CERES_EIGEN_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="CERES_GLOG_DIR">
+      <Value>$(CERES_GLOG_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="CERES_GFLAGS_DIR">
+      <Value>$(CERES_GFLAGS_DIR)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>

@@ -14,6 +14,19 @@ app.get('/listusers', function(req, res){
 	});
 });
 app.post('/updateVerticesMap', function(req, res){
+	var execFile = require('child_process').execFile;
+	var program = 'e:/repos/PhD-WebService/UpdateVerticesMap/bin/Automation.exe';
+	
+	var args = 100;
+	var child = execFile(program, [args], function(error, stdout, stderror){
+		var number = stdout;
+		console.log(number);
+		res.end(number);
+	});
+	
+	
+});
+app.post('/updateVerticesMap_backup', function(req, res){
 	var base64Data = req.body.imgBase64.replace(/^data:image\/png;base64,/, "");
 	var thetaBase64Data = req.body.thetaImgBase64.replace(/^data:image\/png;base64,/, "");
 	fs.writeFile('ptzInput.png', base64Data, 'base64', function(err){
