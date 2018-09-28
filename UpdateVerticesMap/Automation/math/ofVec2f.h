@@ -745,7 +745,7 @@ public:
 	/// ofVec2f v1(5, 0);
 	/// ofVec2f v1Normalized = v1.getNormalized(); // (1, 0)
 	/// ofVec2f v2(5, 5);
-	/// ofVec2f v2Normalized = v2.getNormalized(); // (âˆš2, âˆš2)
+	/// ofVec2f v2Normalized = v2.getNormalized(); // (¡î2, ¡î2)
 	/// ~~~~
     ofVec2f  getNormalized() const;
 
@@ -760,7 +760,7 @@ public:
 	/// ofVec2f v1(5, 0);
 	/// v1.normalize(); // v2 is now (1, 0)
 	/// ofVec2f v2(5, 5);
-	/// v2.normalize(); // v2 is now (âˆš2, âˆš2)
+	/// v2.normalize(); // v2 is now (¡î2, ¡î2)
 	/// ~~~~
 	/// \sa getNormalized()
     ofVec2f& normalize();

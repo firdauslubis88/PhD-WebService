@@ -13,9 +13,32 @@ app.get('/listusers', function(req, res){
 		res.end(data);
 	});
 });
+app.post('/updatePanTilt', function(req, res){
+	var execFile = require('child_process').execFile;
+	var program = 'd:/repos/PhD-WebService/PTZControl/bin/PTZControl.exe';
+	var args = [];
+	if(req.body.pan_value != null){
+		args.push('pan');
+		args.push(req.body.pan_value);
+	}
+	if(req.body.tilt_value != null){
+		args.push('tilt');
+		args.push(req.body.tilt_value);
+	}
+//	var args = [req.body.direction,req.body.direction_value];
+//	console.log(args);
+//	res.end(args);
+	var child = execFile(program, args, function(error, stdout, stderror){
+		var number = stdout;
+		console.log(number);
+		res.end(number);
+	});
+	
+	
+});
 app.post('/updateVerticesMap', function(req, res){
 	var execFile = require('child_process').execFile;
-	var program = 'e:/repos/PhD-WebService/UpdateVerticesMap/bin/Automation.exe';
+	var program = 'd:/repos/PhD-WebService/UpdateVerticesMap/bin/Automation.exe';
 	
 	var args = 100;
 	var child = execFile(program, [args], function(error, stdout, stderror){

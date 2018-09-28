@@ -774,7 +774,7 @@ public:
 	/// ofVec3f v1(5, 0, 0);
 	/// ofVec3f v1Normalized = v1.getNormalized(); // (1, 0, 0)
 	/// ofVec3f v2(5, 0, 5);
-	/// ofVec3f v2Normalized = v2.getNormalized(); // (âˆš2, 0, âˆš2)
+	/// ofVec3f v2Normalized = v2.getNormalized(); // (¡î2, 0, ¡î2)
 	/// ~~~~
 	ofVec3f  getNormalized() const;
    
@@ -789,7 +789,7 @@ public:
 	/// ofVec3f v1(5, 0, 0);
 	/// v1.normalize(); // v2 is now (1, 0, 0)
 	/// ofVec3f v2(5, 0, 5);
-	/// v2.normalize(); // v2 is now (âˆš2, 0, âˆš2)
+	/// v2.normalize(); // v2 is now (¡î2, 0, ¡î2)
 	/// ~~~~
 	/// 
   	ofVec3f& normalize();
